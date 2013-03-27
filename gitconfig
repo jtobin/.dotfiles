@@ -1,0 +1,5 @@
+[user]
+	name = Jared Tobin
+	email = jared@jtobin.ca
+[core]
+	editor = /usr/bin/vim
