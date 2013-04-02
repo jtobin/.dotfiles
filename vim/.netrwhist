@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/jtobin/projects/bdellium/fbi/spec'
 let g:netrw_dirhist_2='/Users/jtobin/projects/bdellium/fbi/spec/support'
 let g:netrw_dirhist_3='/Users/jtobin/projects/bdellium/fbi/app/views/layouts'
 let g:netrw_dirhist_4='/Users/jtobin/projects/bdellium/fbi/spec'
 let g:netrw_dirhist_5='/Users/jtobin/projects/bdellium/fbi/spec/support'
 let g:netrw_dirhist_6='/Users/jtobin/.vim'
+let g:netrw_dirhist_7='/Users/jtobin/projects/bdellium/opis-pdor/rsa-platform/src/PDOR/Output'
