@@ -30,3 +30,9 @@ let g:necoghc_enable_detailed_browse = 1
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+" Rainbow paren
+au BufEnter *clj RainbowParenthesesToggle
+au Syntax *clj RainbowParenthesesLoadRound
+au Syntax *clj RainbowParenthesesLoadSquare
+au Syntax *clj RainbowParenthesesLoadBraces
+
