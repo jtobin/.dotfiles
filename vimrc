@@ -33,7 +33,3 @@ let g:necoghc_enable_detailed_browse = 1
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-" clojure-specific.  BufEnter is not ideal, but meh
-set t_Co=256
-au BufEnter *clj colorscheme elrodeo
-
