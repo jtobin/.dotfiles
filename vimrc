@@ -7,6 +7,9 @@ set tabstop=2 shiftwidth=2 expandtab
 set laststatus=2
 set number
 
+set guioptions-=r
+set guioptions-=L
+
 filetype plugin on
 syntax on
 
@@ -30,6 +33,7 @@ let g:necoghc_enable_detailed_browse = 1
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-" clojure-specific
-au BufEnter *clj colorscheme elflord
+" clojure-specific.  BufEnter is not ideal, but meh
+set t_Co=256
+au BufEnter *clj colorscheme elrodeo
 
