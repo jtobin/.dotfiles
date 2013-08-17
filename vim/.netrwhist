@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/jtobin/projects/bdellium/rsa-platform/src/RSA/Data'
-let g:netrw_dirhist_2='/Users/jtobin/projects/phd/libs/prompt-pcap/Kospi'
-let g:netrw_dirhist_3='/Users/jtobin/projects/phd/sandbox/kospi/code/Kospi'
-let g:netrw_dirhist_4='/Users/jtobin/projects/bdellium/pdor/rsa-platform/src/PDOR'
-let g:netrw_dirhist_5='/Users/jtobin/projects/bdellium/rsa-platform/src/RSA'
-let g:netrw_dirhist_6='/Users/jtobin/projects/bdellium/rsa-admin-data/dump'
