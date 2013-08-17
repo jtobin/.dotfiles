@@ -15,6 +15,7 @@ alias vl='vim -c ":set background=light"'
 alias vd='vim -c ":set background=dark"'
 alias j='~/j64-701/bin/jconsole'
 alias emacs="/usr/local/bin/emacs"
+alias vim="mvim -v"
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 

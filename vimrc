@@ -7,6 +7,9 @@ set tabstop=2 shiftwidth=2 expandtab
 set laststatus=2
 set number
 
+set guioptions-=r
+set guioptions-=L
+
 filetype plugin on
 syntax on
 
