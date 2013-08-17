@@ -1,5 +1,6 @@
 [user]
 	name = Jared Tobin
 	email = jared@jtobin.ca
+	signingkey = E32D77E7
 [core]
 	editor = /usr/bin/vim

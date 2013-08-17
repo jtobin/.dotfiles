@@ -10,6 +10,8 @@ set number
 set guioptions-=r
 set guioptions-=L
 
+set cc=80
+
 filetype plugin on
 syntax on
 
@@ -32,4 +34,7 @@ let g:necoghc_enable_detailed_browse = 1
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+" clojure only
+" au BufEnter *clj colorscheme elrodeo
 

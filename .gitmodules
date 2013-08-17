@@ -43,3 +43,6 @@
 [submodule "vim/bundle/vim-classpath"]
 	path = vim/bundle/vim-classpath
 	url = git://github.com/tpope/vim-classpath.git
+[submodule "vim/bundle/vim-colorscheme-elrodeo"]
+	path = vim/bundle/vim-colorscheme-elrodeo
+	url = git://github.com/chmllr/vim-colorscheme-elrodeo.git
