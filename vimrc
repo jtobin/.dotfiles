@@ -5,7 +5,7 @@ colorscheme solarized
 
 set tabstop=2 shiftwidth=2 expandtab
 set laststatus=2
-set number
+set relativenumber
 
 set guioptions-=r
 set guioptions-=L
@@ -14,6 +14,9 @@ set cc=80
 
 filetype plugin on
 syntax on
+
+" ack
+let g:ackprg="/usr/local/bin/ack"
 
 " haskellmode-vim 
 au BufEnter *hs compiler ghc
