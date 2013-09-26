@@ -41,3 +41,5 @@ let g:ctrlp_cmd = 'CtrlP'
 " clojure only
 " au BufEnter *clj colorscheme elrodeo
 
+set statusline+=%{fugitive#statusline()}
+
