@@ -7,7 +7,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export HISTFILESIZE=10000
 export HISTSIZE=10000
-export PATH="$PATH:/usr/local/share/npm/bin:$HOME/.cabal/bin:/usr/local/bin:/usr/local/lib:/usr/texbin:/.rvm/bin:/usr/local/sbin:/usr/local/heroku/bin:$HOME/.lein/bin"
+export PATH="$PATH:/usr/local/share/npm/bin:$HOME/.cabal/bin:/usr/local/bin:/usr/local/lib:/usr/texbin:/.rvm/bin:/usr/local/sbin:/usr/local/heroku/bin:$HOME/.lein/bin:$HOME/.rvm/bin"
 
 alias ll="ls -l"
 alias c="echo 'use C-l'"
