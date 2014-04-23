@@ -76,3 +76,7 @@ set statusline+=%{fugitive#statusline()}
 au BufEnter *sc set filetype=lisp
 au BufEnter *church set filetype=lisp
 
+" vim-slime
+let g:slime_target = "tmux"
+let g:slime_paste_file = tempname()
+
