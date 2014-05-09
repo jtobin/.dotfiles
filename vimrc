@@ -8,6 +8,7 @@ set relativenumber
 set guioptions-=r
 set guioptions-=L
 set cc=80
+set backspace=indent,eol,start " fucking weird homebrew/mavericks thing
 
 filetype plugin on
 syntax on
@@ -75,6 +76,9 @@ set statusline+=%{fugitive#statusline()}
 " church
 au BufEnter *sc set filetype=lisp
 au BufEnter *church set filetype=lisp
+
+" ragel
+au BufEnter *rl set filetype=ragel
 
 " vim-slime
 let g:slime_target = "tmux"

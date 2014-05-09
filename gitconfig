@@ -4,3 +4,5 @@
 	signingkey = E32D77E7
 [core]
 	editor = /usr/bin/vim
+[branch]
+	autosetuprebase = always
