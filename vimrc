@@ -86,5 +86,4 @@ let g:slime_paste_file = tempname()
 
 " ludwig
 au BufRead,BufNewFile *.clef set filetype=ludwig
-au! Syntax ludwig source /Users/jtobin/projects/luminal/ludwig/etc/ludwig.vim
 
