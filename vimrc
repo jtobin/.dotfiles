@@ -87,3 +87,6 @@ let g:slime_paste_file = tempname()
 " ludwig
 au BufRead,BufNewFile *.clef set filetype=ludwig
 
+" Remove trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
+
