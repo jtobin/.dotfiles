@@ -16,7 +16,7 @@ syntax on
 " ack
 let g:ackprg="/usr/local/bin/ack"
 
-" haskellmode-vim 
+" haskellmode-vim
 au BufEnter *hs compiler ghc
 let g:haddock_browser = "open"
 let g:haddock_indexfiledir = "~/.vim/"
@@ -85,7 +85,7 @@ let g:slime_target = "tmux"
 let g:slime_paste_file = tempname()
 
 " ludwig
-au BufRead,BufNewFile *.clef set filetype=ludwig
+au BufRead,BufNewFile *.lw set filetype=ludwig
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
