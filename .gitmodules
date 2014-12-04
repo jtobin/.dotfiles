@@ -3,7 +3,7 @@
 	url = git://github.com/scrooloose/nerdtree.git
 [submodule "vim/bundle/ack.vim"]
 	path = vim/bundle/ack.vim
-	url = git://github.com/mileszs/ack.vim.git
+	url = git://github.com/jtobin/ack.vim.git
 [submodule "vim/bundle/ctrlp.vim"]
 	path = vim/bundle/ctrlp.vim
 	url = git://github.com/kien/ctrlp.vim.git
