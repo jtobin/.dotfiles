@@ -11,41 +11,47 @@ setlocal iskeyword+=-
 setlocal iskeyword+=.
 syn case ignore
 
-syn keyword ludwigRequire requires
-syn keyword ludwigStatement compile
+" Rules flow from least specific to most specific
 
-syn match ludwigType "define\s\+[A-z0-9\-]*:"
+" Int and a general keyword
+syn match ludwigInt "\s\+\d\+"
+syn match ludwigKey "[a-zA-Z0-9\-_]\+\s*:"
 
-syn match ludwigComment "\v#.*$"
-
-syn region braces start="{" end="}" fold transparent
-syn region quotes start=/'/ end=/'/ fold transparent
-
-syn match ludwigKey "^[A-Za-z0-9\-]*:"
-syn match ludwigInt "\s[0-9]*"
-
+" Reserved keywords
+syn match ludwigKeyword "^requires"
+syn match ludwigKeyword "^main:"
 syn keyword ludwigBoolean true false
 
-syn region ludwigString oneline start="'" end="'" skip="\\'"
-syn region ludwigString oneline start='"' end='"' skip='\\"'
+" Strings
+syn region ludwigString start="'" end="'" skip="\\'"
+syn region ludwigString start='"' end='"' skip='\\"'
 
-syn region ludwigDict start="{" end="}" contains=ludwigKey
-syn match ludwigKey "[A-z0-9\-]\+\s*:" contained containedin=ludwigDict
+" Data declarations
+syn region ludwigData start="^[a-zA-Z0-9\-_]*" end=":\s*$" oneline
+syn match ludwigKey ".*:" contained containedin=ludwigData
+syn match ludwigType "^[a-zA-Z0-9\-_]*\s*" contained containedin=ludwigData
 
-syn region ludwigExplDecl start="^(.*)" end=":" contains=ludwigKey oneline
-syn match ludwigType "([A-z0-9\-]*)" contained containedin=ludwigExplDecl
-syn match ludwigKey "\s\+[A-z0-9\-]*:" contained containedin=ludwigExpl
+" Type definitions
+syn region ludwigDefinition start="^define" end="$" oneline
+syn match ludwigType ".*:" contained containedin=ludwigDefinition
+syn match ludwigKeyword "^define" contained containedin=ludwigDefinition
 
-syn match ludwigKey "\s\+[A-z0-9\-]\+\s*:"
+" Int as keys in dicts
+syn region braces start="{" end="}" fold transparent
+syn match ludwigKey "\s\+[0-9\-]\+\s*:" contained containedin=braces
 
-highlight link ludwigRequire PreProc
-highlight link ludwigStatement Statement
-highlight link ludwigComment Comment
-highlight link ludwigBoolean Boolean
-highlight link ludwigInt Number
-highlight link ludwigString String
-highlight link ludwigKey Identifier
-highlight link ludwigType Type
+" Comments
+syn match ludwigComment "\v#.*$"
+
+" Colors choice
+highlight link ludwigComment    Comment
+highlight link ludwigKeyword    Statement
+highlight link ludwigDefinition Comment
+highlight link ludwigType       Type
+highlight link ludwigString     String
+highlight link ludwigKey        Identifier
+highlight link ludwigBoolean    Boolean
+highlight link ludwigInt        Number
 
 let b:current_syntax = "ludwig"
 
