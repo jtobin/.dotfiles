@@ -6,7 +6,6 @@ PATH=/usr/local/bin:/usr/local/lib:/usr/local/sbin:$PATH
 PATH=$PATH:/usr/texbin
 PATH=$PATH:/usr/local/heroku/bin
 PATH=$PATH:$HOME/.cabal/bin
-PATH=$PATH:$HOME/.rvm/bin
 PATH=$PATH:$HOME/.lein/bin
 
 export PATH

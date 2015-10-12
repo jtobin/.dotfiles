@@ -1,10 +1,16 @@
 [user]
 	name = Jared Tobin
 	email = jared@jtobin.ca
-	signingkey = E32D77E7
 [core]
 	editor = /usr/bin/vim
 [branch]
 	autosetuprebase = always
 [push]
 	default = simple
+[hub]
+	host = github.com
+	host = github.com
+[url "git@github-luminal:LuminalHQ"]
+	insteadOf = https://github.com/LuminalHQ
+[url "git@github-luminal:LuminalHQ"]
+	insteadOf = git@github.com:LuminalHQ
