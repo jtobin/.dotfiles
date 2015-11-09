@@ -67,6 +67,7 @@ let g:necoghc_enable_detailed_browse = 1
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_extensions = ['tag']
 
 " clojure only
 " au BufEnter *clj colorscheme elrodeo
